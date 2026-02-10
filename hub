@@ -86,9 +86,21 @@ local btns = serv:Channel("Evade")
 local btns = serv:Channel("DOORS")
 local btns = serv:Channel("War Tycoon")
 btns:Button(
-	"Scarlet,
+	"Scarlet",
 	function()
 		local scriptContent = game:HttpGet(SCARLET, true)
+		local scriptFunction = loadstring(scriptContent)
+		if not scriptFunction then
+			warn("Не удалось запустить скрипт :(")
+			return
+		end
+		scriptFunction()
+	end
+)
+btns:Button(
+	"Nobulem",
+	function()
+		local scriptContent = game:HttpGet(NOBUL, true)
 		local scriptFunction = loadstring(scriptContent)
 		if not scriptFunction then
 			warn("Не удалось запустить скрипт :(")
