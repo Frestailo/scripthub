@@ -7,6 +7,20 @@ local c = loadstring(game:HttpGet("https://raw.githubusercontent.com/Frestailo/s
 
 local serv = win:Server("Games", "")
 
+
+local btns = serv:Channel("Da Hood")
+btns:Button(
+    "XK5NG",
+    function()
+        local scriptContent = game:HttpGet(xk5ng, true)
+        local scriptFunction = loadstring(scriptContent)
+        if not scriptFunction then
+            warn("Не удалось запустить скрипт :(")
+            return
+        end
+        scriptFunction()
+    end
+)
 local btns = serv:Channel("Criminality")
 
 btns:Button(
