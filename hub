@@ -84,6 +84,18 @@ local btns = serv:Channel("Driving Empire")
 local btns = serv:Channel("Murder Mystery 2")
 local btns = serv:Channel("Evade")
 local btns = serv:Channel("DOORS")
+btns:Button(
+    "Pryc hub",
+    function()
+        local scriptContent = game:HttpGet(PRYC, true)
+        local scriptFunction = loadstring(scriptContent)
+        if not scriptFunction then
+            warn("Не удалось запустить скрипт :(")
+            return
+        end
+        scriptFunction()
+    end
+)
 local btns = serv:Channel("War Tycoon")
 btns:Button(
 	"Scarlet",
