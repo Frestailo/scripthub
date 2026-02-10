@@ -85,6 +85,18 @@ local btns = serv:Channel("Murder Mystery 2")
 local btns = serv:Channel("Evade")
 local btns = serv:Channel("DOORS")
 local btns = serv:Channel("War Tycoon")
+btns:Button(
+	"Scarlet,
+	function()
+		local scriptContent = game:HttpGet(SCARLET, true)
+		local scriptFunction = loadstring(scriptContent)
+		if not scriptFunction then
+			warn("Не удалось запустить скрипт :(")
+			return
+		end
+		scriptFunction()
+	end
+)
 local btns = serv:Channel("Jailbreak")
 local serv = win:Server("Universals", "")
 local btns = serv:Channel("Resources")
