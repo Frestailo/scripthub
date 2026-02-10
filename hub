@@ -1,19 +1,9 @@
 local DiscordLib =
-    loadstring(game:HttpGet"https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord")()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord"))()
 
 local win = DiscordLib:Window("discord library")
-
+local c = loadstring(game:HttpGet("https://raw.githubusercontent.com/Frestailo/scripts/refs/heads/main/c"))()
 --Scripts
-local ALP = "https://raw.githubusercontent.com/Frestailo/scripts/refs/heads/main/AL"
-local BloodyV2 = "https://raw.githubusercontent.com/BloodyV2/BloodyScript/refs/heads/main/Free"
-local IY = "https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"
-local DEV3 = "https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua"
-local DEV4 = "https://gist.githubusercontent.com/DinosaurXxX/b757fe011e7e600c0873f967fe427dc2/raw/ee5324771f017073fc30e640323ac2a9b3bfc550/dark%2520dex%2520v4"
-local DE = "https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"
-local ADS = "https://raw.githubusercontent.com/DuxiiT/auto-strat/refs/heads/main/Library.lua"
-local ATLAS = "https://raw.githubusercontent.com/Chris12089/atlasbss/main/script.lua"
-local ZWC = "https://pastebin.com/raw/BkPd3jtD"
-
 
 local serv = win:Server("Games", "")
 
@@ -35,8 +25,8 @@ btns:Button(
     "ZenWare Cracked",
     function()
         local scriptContent = game:HttpGet(ZWC, true)
-	local scriptFunction = loadstring(scriptContent)
-	if not scriptFunction then
+	    local scriptFunction = loadstring(scriptContent)
+	    if not scriptFunction then
             warn("Не удалось запустить скрипт :(")
             return
         end
@@ -96,7 +86,6 @@ local btns = serv:Channel("Evade")
 local btns = serv:Channel("DOORS")
 local btns = serv:Channel("War Tycoon")
 local btns = serv:Channel("Jailbreak")
-
 local serv = win:Server("Universals", "")
 local btns = serv:Channel("Resources")
 btns:Button(
