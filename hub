@@ -2,11 +2,23 @@ local DiscordLib =
     loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord"))()
 
 local win = DiscordLib:Window("discord library")
-local c = loadstring(game:HttpGet("https://raw.githubusercontent.com/Frestailo/scripts/refs/heads/main/c"))()
+
+local ALP = "https://raw.githubusercontent.com/Frestailo/scripts/refs/heads/main/AL"
+local BloodyV2 = "https://raw.githubusercontent.com/BloodyV2/BloodyScript/refs/heads/main/Free"
+local IY = "https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"
+local DEV3 = "https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua"
+local DEV4 = "https://gist.githubusercontent.com/DinosaurXxX/b757fe011e7e600c0873f967fe427dc2/raw/ee5324771f017073fc30e640323ac2a9b3bfc550/dark%2520dex%2520v4"
+local DE = "https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"
+local ADS = "https://raw.githubusercontent.com/DuxiiT/auto-strat/refs/heads/main/Library.lua"
+local ATLAS = "https://raw.githubusercontent.com/Chris12089/atlasbss/main/script.lua"
+local ZWC = "https://pastebin.com/raw/BkPd3jtD"
+local SCARLET = "https://raw.githubusercontent.com/ScarletLAB/scarlet/main/universal/main.lua"
+local nebulem = "https://nobulem.wtf/loader.lua"
+local PRYC = "https://raw.githubusercontent.com/Qiwikox12/stubrawl/refs/heads/main/DoorsHardcore.txt"
+local XK5NG = "https://raw.githubusercontent.com/Frestailo/scripts/refs/heads/main/xk5ng"
+
 --Scripts
-
 local serv = win:Server("Games", "")
-
 
 local btns = serv:Channel("Da Hood")
 btns:Button(
